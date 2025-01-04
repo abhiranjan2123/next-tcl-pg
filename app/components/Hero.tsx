@@ -76,6 +76,7 @@ const Hero = () => {
           objectFit="cover"
           className="opacity-40 rounded-xl"
           priority
+          sizes='(min-width: 640px) 640px, 100vw'
         />
       </div>
 
@@ -101,7 +102,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-xl "
+            className="bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-xl m-auto"
             id="booking-form"
           >
             <h3 className="text-2xl font-semibold mb-6 text-primary text-center">Book A Visit</h3>
