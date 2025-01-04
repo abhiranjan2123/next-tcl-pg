@@ -20,8 +20,8 @@ const destinations = [
 ]
 
 const roomTypes = [
-  'Deluxe Single',
-  'Premium Double',
+  'Single Sharing',
+  'Double Sharing',
 ]
 
 const Hero = () => {
@@ -29,7 +29,7 @@ const Hero = () => {
     name: '',
     email: '',
     phone: '',
-    roomType: 'Deluxe Single',
+    roomType: 'Single Sharing',
     dateTime: ''
   })
   const [isLoading, setIsLoading] = useState(false)
@@ -87,11 +87,12 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className=''
           >
-            <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight text-wrap">
+            <h1 className="text-[30px] lg:text-[50px] font-bold text-white mb-6 leading-tight">
               Book A Perfect Accommodation
             </h1>
-            <p className="text-xl text-white/90 mb-8 max-w-xl">
+            <p className="text-[15px] lg-text-[30px] text-white/90 mb-8">
             We understand that comfort and convenience are key when choosing the right place to stay. Discover a selection of well-appointed paying guest accommodations, designed to offer a welcoming and hassle-free living experience.  </p>
           </motion.div>
 
@@ -100,7 +101,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-xl"
+            className="bg-white/95 backdrop-blur-md rounded-2xl p-6 shadow-xl "
             id="booking-form"
           >
             <h3 className="text-2xl font-semibold mb-6 text-primary text-center">Book A Visit</h3>
