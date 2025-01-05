@@ -59,6 +59,7 @@ const Hero = () => {
       })
     } catch (error) {
       alert('Something went wrong. Please try again.')
+      console.log(error)
     } finally {
       setIsLoading(false)
     }
