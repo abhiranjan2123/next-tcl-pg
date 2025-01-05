@@ -7,6 +7,7 @@ import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import RoomsShowcase from './components/RoomSection';
 import LocationSection from './components/LocationSection';
+import FAQ from './components/Faq';
 
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
     <RoomsShowcase />
     <Amenities />
     <LocationSection />
+    <FAQ />
     <Footer />
     </>
   )
